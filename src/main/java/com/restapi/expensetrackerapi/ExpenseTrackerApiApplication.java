@@ -1,6 +1,8 @@
 package com.restapi.expensetrackerapi;
 
 import com.restapi.expensetrackerapi.filters.AuthFilter;
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+import io.swagger.v3.oas.annotations.info.Info;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -9,6 +11,7 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 @SpringBootApplication
+@OpenAPIDefinition(info = @Info(title = "SPRING BOOT REST API", version = "0.0.1", description = "Una api rest en spring boot"))
 public class ExpenseTrackerApiApplication {
 
 	public static void main(String[] args) {
